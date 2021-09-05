@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tooltip Image</title>
+    <link rel="stylesheet" href="TooltipStyle.css">
+</head>
+<body>
+    <div class="tool">
+        <div class="tooltip">
+            <span id="tip" class="tooltiptext"></span>
+            <map name="image_map">
+                <area class="areaImage" alt="Laptop Image" style="cursor:pointer" coords="204,60,509,58,499,240,506,439,204,434,221,239" shape="poly" onmouseover="laptop()">
+                <area class="areaImage" alt="Mobile Image" style="cursor:pointer" coords="530,217,586,315" shape="rect" onmouseover="mobile()">
+                <area class="areaImage" alt="Coffie Mug Image" style="cursor:pointer" coords="592,381,60" shape="circle" onmouseover="coffieMug()">
+                <area class="areaImage" alt="Diary Image" style="cursor:pointer" coords="91,240,202,277,131,423,7,379" shape="poly" onmouseover="diary()">
+            </map>
+        </div>
+        <img src="image.jpg" alt="Tooltip Image" usemap="#image_map">
+    </div>
+    <script src="./TooltipScript.js"></script>
+</body>
+</html>
